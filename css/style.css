@@ -144,6 +144,8 @@ img {
 
 /* Герой */
 .hero {
+  margin: auto auto;
+  max-width: 1600px;
   padding: 200px 0;
   background-image: linear-gradient(
       to right,
