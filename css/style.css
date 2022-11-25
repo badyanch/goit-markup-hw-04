@@ -39,6 +39,19 @@ img {
   display: block;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* Logo */
 .header {
   border-bottom: 1px solid #ececec;
@@ -132,6 +145,15 @@ img {
 /* Герой */
 .hero {
   padding: 200px 0;
+  background-image: linear-gradient(
+      to right,
+      rgba(56, 53, 53, 0.4),
+      rgba(56, 53, 56, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 
   background-color: var(--primary-bgb-color);
   text-align: center;
@@ -282,7 +304,8 @@ img {
 }
 
 .street {
-  margin-bottom: 10px;
+  display: block;
+  margin-bottom: 9px;
 
   font-size: 14px;
   line-height: 1.7;
@@ -292,6 +315,7 @@ img {
 }
 
 .contact-footer .link-contact {
+  display: block;
   margin-bottom: 10px;
 
   font-size: 14px;
