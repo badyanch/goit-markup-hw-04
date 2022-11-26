@@ -7,6 +7,10 @@
   --primary-bgb-color: #2f303a;
   --accent-hero-button-color: #188ce8;
   --primary-section-color: #f5f4fa;
+  --icons-color: #afb1b8;
+  --icons-bg-color: rgba(255, 255, 255, 0.1);
+  --secondary-accent-color: #ffffff;
+  --icon-backround-color: #f5f4fa;
 }
 
 body {
@@ -103,6 +107,11 @@ img {
   margin-left: auto;
 }
 
+.icon-contact {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .site-nav .link {
   display: block;
   padding: 32px 0;
@@ -126,7 +135,8 @@ img {
 }
 
 .contact-nav .link-contact {
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 32px 0;
 
   font-weight: 500;
@@ -200,6 +210,16 @@ img {
 .benefits {
   display: flex;
   gap: 30px;
+}
+
+.background-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: var(--icon-backround-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .section {
@@ -285,11 +305,79 @@ img {
 }
 
 .profession {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
+}
+
+.icons-list {
+  display: flex;
+  gap: 10px;
+}
+
+.social-network-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+}
+
+.social-network-link.primary {
+  color: var(--icons-color);
+}
+
+.social-network-link.secondary {
+  color: var(--secondary-accent-color);
+
+  background-color: var(--icons-bg-color);
+}
+
+.social-network-link.primary:hover,
+.social-network-link.primary:focus {
+  color: var(--secondary-accent-color);
+
+  background-color: var(--accent-color);
+}
+
+.social-network-icon {
+  fill: currentColor;
+}
+
+/* Client */
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+
+  color: var(--icons-color);
+
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+}
+
+.link-clients:hover,
+.link-clients:focus {
+  color: var(--accent-color);
+
+  border-color: var(--accent-color);
+}
+
+.client-icon {
+  fill: currentColor;
 }
 
 /* Футер */
@@ -334,6 +422,32 @@ img {
   color: var(--accent-color);
 }
 
+.footer > .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-contact {
+  margin-right: 70px;
+}
+
+.social-title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--secondary-accent-color);
+}
+
+.social-network-link.secondary:hover,
+.social-network-link.secondary:focus {
+  background-color: var(--accent-color);
+}
+
 /* Портфоліо */
 .button-list {
   display: flex;
@@ -361,6 +475,18 @@ img {
   color: var(--bgb-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.project-link {
+  display: block;
+}
+
+.project-item:hover,
+.project-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  cursor: pointer;
 }
 
 .type {
